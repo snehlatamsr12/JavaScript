@@ -41,8 +41,9 @@ let newArray = pens.map((item)=>{
 	return item;
 });
 console.log(newArray);
-//normal for loop
-//map, filter
 
-//map: insert rating value {rate:5} to each object
-//filter: filter object rate > 5
+//method to filter
+let filetred = newArray.filter(function(item){
+return item.rate>4?item:null;
+})
+console.log(filetred);
